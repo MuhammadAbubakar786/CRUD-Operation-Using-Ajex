@@ -5,7 +5,6 @@ C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Aje
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\bin\Debug\netcoreapp2.2\Ajex(Crud Operations).pdb
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\bin\Debug\netcoreapp2.2\Ajex(Crud Operations).Views.dll
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\bin\Debug\netcoreapp2.2\Ajex(Crud Operations).Views.pdb
-C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).csprojAssemblyReference.cache
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).csproj.CoreCompileInputs.cache
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).RazorAssemblyInfo.cache
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).RazorAssemblyInfo.cs
