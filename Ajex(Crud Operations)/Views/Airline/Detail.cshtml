@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Ajex_Crud_Operations_.Models.Airline1>
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShortCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{var temp = "table-warning"; }
+@foreach (var item in Model)
+{
+    if (item.Status == "Active")
+    {
+        temp = "table-info";
+    }
+    else if (item.Status == "inActive")
+    {
+        temp = "table-danger";
+    }
+    else
+    {
+        temp = "table-warning";
+    }
+
+
+        <tr class="@temp">
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShortCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                <a href="/Airline/Edit?id=@item.Id" class="btn btn-primary"><i class="fa fa-pencil"></i>Edit</a>
+                <a href="#" data-id="@item.Id" class="btn btn-danger delete"><i class="fa fa-bin"></i>Delete</a>
+                <a href="/Airline/Details?id=@item.Id"  class="btn btn-warning"><i class="fa fa-eye"></i>Detail</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@section Scripts{
+
+    <script>
+        $(function () {
+
+            $('.delete').click(function () {
+
+                var DeleteButton = $(this);
+                var Ajex_id = DeleteButton.data("id");
+                DeleteButton.text("Please Wait ....");
+                DeleteButton.removeClass("btn-danger");
+                DeleteButton.addClass("btn-success");
+                $.ajax({
+                    url: '/Airline/Delete',
+                    type: 'Post',
+                    data: {
+                        id: Ajex_id
+                    },
+                    success: function (response) {
+                        if (response == "1") {
+                            //alert("Data delted");
+                            DeleteButton.parent().parent().fadeOut(5000);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+}

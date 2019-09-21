@@ -1,0 +1,79 @@
+﻿@model Ajex_Crud_Operations_.Models.Airline1
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+@if (!string.IsNullOrEmpty(ViewBag.message))
+{
+    if (ViewBag.hint == "Success")
+    {
+        <h5 class="alert alert-success">@ViewBag.message</h5>
+    }
+    else if (ViewBag.hint == "Failed")
+    {
+        <h5 class="alert alert-danger">@ViewBag.message</h5>
+    }
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Country" class="control-label"></label>
+                <input asp-for="Country" class="form-control" />
+                <span asp-validation-for="Country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShortCode" class="control-label"></label>
+                <input asp-for="ShortCode" class="form-control" />
+                <span asp-validation-for="ShortCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4" id="image">
+
+    </div>
+    <div class="col-md-4 " id="video">
+
+    </div>
+</div>
+
+<div>
+    <a href="Detail" class="btn btn-primary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(function () {
+
+            $('h5').fadeOut(5000);
+            $('#image').load("/Airline/UploadImage");
+            $('#video').load("/Airline/UploadVideo");
+
+        });
+    </script>
+}

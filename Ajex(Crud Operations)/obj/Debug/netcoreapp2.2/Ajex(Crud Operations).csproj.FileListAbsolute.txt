@@ -29,3 +29,13 @@ C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Aje
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).dll
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).pdb
 C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).csproj.CopyComplete
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Ajex(Crud Operations).csprojAssemblyReference.cache
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Airline\Create.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Airline\Detail.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Airline\Details.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Airline\Edit.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Flights\Create.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Flights\Delete.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Flights\Details.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Flights\Edit.g.cshtml.cs
+C:\Users\Mian Abubakar\source\repos\MuhammadAbubakar786\CRUD-Operation-Using-Ajex\Ajex(Crud Operations)\obj\Debug\netcoreapp2.2\Razor\Views\Flights\Index.g.cshtml.cs
