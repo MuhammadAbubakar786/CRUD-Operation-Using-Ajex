@@ -39,10 +39,16 @@ namespace Ajex_Crud_Operations_.Controllers
 
         }
         [HttpGet]
-        public IActionResult Detail()
+        public IActionResult Detail(string value="")
         {
-            return View(orm.Airline1.ToList());
+            if(value == "")
+                {
+                return View(orm.Airline1.ToList());
+            }
+            return View(orm.Airline1.Where(temp => temp.Name.StartsWith(value) || temp.Status.Contains(value)).ToList());
+            
         }
+
         public string Delete(int id)
         {
 
