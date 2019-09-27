@@ -19,9 +19,14 @@ namespace Ajex_Crud_Operations_.Controllers
         }
 
         // GET: Flights
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string id = "")
         {
-            return View(await _context.Flight.ToListAsync());
+            if(id == "")
+            {
+                return View(await _context.Flight.ToListAsync());
+            }
+            return View(await _context.Flight.Where(temp => temp.Destinantion.Contains(id)).ToListAsync());
+
         }
 
         // GET: Flights/Details/5

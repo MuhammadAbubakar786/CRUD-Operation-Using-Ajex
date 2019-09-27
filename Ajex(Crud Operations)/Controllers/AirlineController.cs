@@ -45,7 +45,7 @@ namespace Ajex_Crud_Operations_.Controllers
                 {
                 return View(orm.Airline1.ToList());
             }
-            return View(orm.Airline1.Where(temp => temp.Name.StartsWith(value) || temp.Status.Contains(value)).ToList());
+            return View(orm.Airline1.Where(temp => temp.Name.Contains(value) || temp.Status.Contains(value)).ToList());
             
         }
 
